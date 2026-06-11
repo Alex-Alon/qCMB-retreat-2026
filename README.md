@@ -40,13 +40,13 @@ WT control) and region (cerebellum / hippocampus / midbrain / septum).
 
 ### The pipeline:
 
-Pixel Classification (ilastik) — train a plaque-vs-background classifier, then
+Pixel Classification (ilastik) -> train a plaque-vs-background classifier, then
 batch-export a probability map (.h5) for every image.
-Object Classification (ilastik) — turn those probability maps into discrete plaque
+Object Classification (ilastik) —> turn those probability maps into discrete plaque
 objects, measure them, export one CSV per section.
-Fiji macro — measure tissue area per section (the denominator; ilastik never
+Fiji macro —> measure tissue area per section (the denominator; ilastik never
 measures this for you).
-Python — combine all the per-section CSVs and compute burden.
+RStudio —> combine all the per-section CSVs and compute burden.
 
 ### Step 1 — Pixel Classification (make the probability maps)
 
