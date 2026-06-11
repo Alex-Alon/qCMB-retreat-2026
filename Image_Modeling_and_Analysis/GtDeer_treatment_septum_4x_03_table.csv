@@ -1,0 +1,4 @@
+object_id,timestep,labelimage_oid,User Label,Predicted Class,Probability of Plaques,Probability of not plaques,Center of the object_0,Center of the object_1,Size in pixels,Bounding Box Minimum_0,Bounding Box Minimum_1,Bounding Box Maximum_0,Bounding Box Maximum_1
+0,0,1,0,Plaques,1.0,0.0,758.5,414.0,6.0,758.0,413.0,760.0,416.0
+1,0,2,0,Plaques,1.0,0.0,991.86774,1320.5344,189.0,987.0,1311.0,998.0,1331.0
+2,0,3,0,Plaques,1.0,0.0,1011.86774,1320.5344,189.0,1007.0,1311.0,1018.0,1331.0

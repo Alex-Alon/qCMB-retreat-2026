@@ -1,0 +1,11 @@
+object_id,timestep,labelimage_oid,User Label,Predicted Class,Probability of Plaques,Probability of not plaques,Center of the object_0,Center of the object_1,Bounding Box Minimum_0,Bounding Box Minimum_1,Bounding Box Maximum_0,Bounding Box Maximum_1,Size in pixels
+0,0,1,0,Plaques,1.0,0.0,385.66666,547.3333,385.0,547.0,387.0,549.0,3.0
+1,0,2,0,Plaques,1.0,0.0,551.25,601.0,551.0,600.0,553.0,603.0,4.0
+2,0,3,0,Plaques,1.0,0.0,317.5,639.5,317.0,639.0,319.0,641.0,4.0
+3,0,4,0,Plaques,1.0,0.0,1109.7693,857.0,1102.0,850.0,1117.0,864.0,130.0
+4,0,5,0,Plaques,1.0,0.0,878.5,887.5,878.0,887.0,880.0,889.0,4.0
+5,0,6,0,Plaques,1.0,0.0,615.3333,1188.3334,615.0,1188.0,617.0,1190.0,3.0
+6,0,7,0,Plaques,1.0,0.0,738.5,1189.5,737.0,1188.0,741.0,1192.0,12.0
+7,0,8,0,Plaques,1.0,0.0,487.5,1257.5,487.0,1257.0,489.0,1259.0,4.0
+8,0,9,0,Plaques,1.0,0.0,503.5,1388.5,503.0,1388.0,505.0,1390.0,4.0
+9,0,10,0,Plaques,1.0,0.0,1166.75,1476.75,1164.0,1476.0,1170.0,1479.0,8.0
