@@ -50,7 +50,7 @@ RStudio —> combine all the per-section CSVs and compute burden.
 
 ### Step 1 — Pixel Classification (make the probability maps)
 
-ilastik → New Project → Pixel Classification.
+ilastik -> New Project -> Pixel Classification.
 
 
 Input Data -> add a handful of representative images spanning genotypes/regions to
