@@ -1,0 +1,25 @@
+import qupath.ext.stardist.StarDist2D
+
+def pathModel = '/Users/ryaneastman/Desktop/dsb2018_heavy_augment.pb'   // <- set this
+
+def imageData = getCurrentImageData()
+def stains = imageData.getColorDeconvolutionStains()  // needs image type = Brightfield (H-DAB)
+
+def stardist = StarDist2D.builder(pathModel)
+    .preprocess(                          // turn the brown DAB stain into a 1-channel "fluorescence-like" image
+        ImageOps.Channels.deconvolve(stains),
+        ImageOps.Channels.extract(1),     // 1 = DAB (0 = hematoxylin)
+        ImageOps.Filters.median(2)
+    )
+    .threshold(0.5)                       // detection probability; lower = more objects
+    .pixelSize(0.5)                       // µm/pixel — tweak to your scan
+     .measureShape()
+    .measureIntensity()
+    .createAnnotations()     // <- deposits come out as editable annotations, not detections
+    .build()
+
+def pathObjects = getSelectedObjects()
+if (pathObjects.isEmpty()) { Dialogs.showErrorMessage("StarDist", "Draw and select a region first"); return }
+stardist.detectObjects(imageData, pathObjects)
+stardist.close()
+println 'Done!'
