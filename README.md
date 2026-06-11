@@ -126,7 +126,7 @@ junk, and writes tissue_areas.csv (filename, area in px / µm² / mm²).
 
 Test it on 2–3 images before trusting all 686. Open one, threshold it manually, confirm
 the mask covers tissue and excludes the debris flecks. The denominator scales every
-burden number, so it's worth eyeballing.
+burden number, so it's worth checking first.
 
 
 
